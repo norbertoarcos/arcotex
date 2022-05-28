@@ -132,7 +132,7 @@ a:hover {
 }
    
   
-.grid-container /*celu*/{
+.grid-container {
   display: grid;
   gap: 10px;
   grid-template:
@@ -141,19 +141,11 @@ a:hover {
     "main"    auto
     "sidebar" 140px
     "footer"  100px;
-   
 }
 
 @media (min-width: 600px) {
   .grid-container {
-    /* grid-template-columns: 200px auto;
-    grid-template-rows: 10px 50px auto 100px;
-    grid-template-areas: 
-    "header  header"
-    "navbar  navbar"
-    "sidebar main"
-    "footer  footer"; */
-
+   /*tablet*/
     grid-template:
       "header  header" 100px
       "navbar  navbar" 70px
