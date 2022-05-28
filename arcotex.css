@@ -89,9 +89,10 @@ a:hover {
   background-color: #3f5fee;
   margin-left: 5px;
   margin-right: 5px;
+  font-size: 19px;
 }
 
-#H4 {
+#H{
   /*sidebar*/
   margin-top: 0px;
   margin-bottom: 5px;
@@ -122,6 +123,7 @@ a:hover {
   /*footer-celu y mailto*/
   margin: auto;
   color: white;
+ 
 }
   
 #map{
@@ -135,7 +137,7 @@ a:hover {
   gap: 10px;
   grid-template:
     "header"  100px
-    "navbar"  75px
+    "navbar"  80px
     "main"    auto
     "sidebar" 140px
     "footer"  100px;
@@ -161,6 +163,15 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 600px) {
+  #lista1 li {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 23px;
+  }
+}
+
 @media (min-width: 900px) {
   .grid-container {
     /*PC*/
@@ -171,3 +182,27 @@ a:hover {
       200px    auto   200px;
   }
 }
+
+@media screen and (min-width: 900px) {
+  
+  #lista1 li {
+    /*menu ppal*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 30px;
+    border-top: 15px;
+    font-size: 25px;
+  }
+
+  .sidebar {
+    font-size: 22px;
+    padding: 15px;
+    padding-top: 30px;
+  }
+
+}
+
+ 
+
