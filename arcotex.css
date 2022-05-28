@@ -130,15 +130,16 @@ a:hover {
 }
    
   
-.grid-container {
+.grid-container /*celu*/{
   display: grid;
   gap: 10px;
   grid-template:
     "header"  100px
-    "navbar"  70px
+    "navbar"  75px
     "main"    auto
     "sidebar" 140px
     "footer"  100px;
+   
 }
 
 @media (min-width: 600px) {
